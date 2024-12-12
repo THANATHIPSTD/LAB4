@@ -4,9 +4,9 @@ name: Bug Report
 
 description: File a bug report
 
-title: "[Bug]: "
+title: "[Feature]: "
 
-labels: ["bug", "triage"]
+labels: ["questions ", "triage"]
 
 projects: ["octo-org/1", "octo-org/44"]
 
@@ -40,39 +40,21 @@ body:
 
       required: false
  
-  - type: textarea
-
-    id: what-happened
-
-    attributes:
-
-      label: What happened?
-
-      description: Also tell us, what did you expect to happen?
-
-      placeholder: Tell us what you see!
-
-      value: "A bug happened!"
-
-    validations:
-
-      required: true
- 
   - type: dropdown
 
-    id: version
+    id: Type of request 
 
     attributes:
 
-      label: Version
+      label: Type of request ?
 
-      description: What version of our software are you running?
+      description: Select the type of you request
 
       options:
 
-        - 1.0.2 (Default)
+        - New Feature
 
-        - 1.0.3 (Edge)
+        - HEE
 
       default: 0
 
@@ -86,19 +68,17 @@ body:
 
     attributes:
 
-      label: What browsers are you seeing the problem on?
+      label: What is the OS which you wandt suggest?
 
       multiple: true
 
       options:
 
-        - Firefox
+        - Windows
 
-        - Chrome
+        - Mac
 
-        - Safari
-
-        - Microsoft Edge
+        - Hee
  
   - type: textarea
 
@@ -106,27 +86,11 @@ body:
 
     attributes:
 
-      label: Relevant log output
+      label: What are the details of your suggestion?
 
-      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
-
+      description: Explain what do you want
       render: shell
- 
-  - type: checkboxes
 
-    id: terms
-
-    attributes:
-
-      label: Code of Conduct
-
-      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com).
-
-      options:
-
-        - label: I agree to follow this project's Code of Conduct
-
-          required: true
 
 ---
  
