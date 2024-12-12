@@ -54,7 +54,7 @@ body:
 
         - Enhancement
 
-      default: New Feature
+      default: 0
 
     validations:
 
